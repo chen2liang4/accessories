@@ -30,23 +30,29 @@ endfunction
 
 "chen2liang4 config
 colo murphy
-set ic
-set sw=4
+set ic                      " ignore casesensitive
+set sw=4                    " set TAB width
 set ts=4
+set expandtab               " change TAB to spaces, use Ctrl+V+Tab for inserting TAB
+set softtabstop=4           " backspace to delete n whitespaces
+
+set ai                      " Auto indent
+set si                      " Smart indent
+
 set guioptions+=b
 set nu
 set nobackup
-set clipboard=unnamed           " set clipboard to unnamed to access the system clipboard under windows
+set clipboard+=unnamed           " set clipboard to unnamed to access the system clipboard under windows
 syntax on                       " turn syntax highlighting on by default
 
 set fileencodings=utf-8,ucs-bom,shift-jis,latin1,big5,gb18030,gbk,gb2312,cp936
 set fileencoding=utf-8
 set encoding=utf-8
 set termencoding=utf-8
-set guifontwide=NSimsun
+set guifont=Consolas:h12
 
 map    <C-Tab>    :tabn<CR>
 map <C-w> <ESC>viw
 
-let b:javascript_fold=1
-let javascript_enable_domhtmlcss=1
+"let b:javascript_fold=1
+"let javascript_enable_domhtmlcss=1
