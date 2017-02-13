@@ -45,11 +45,15 @@ set nobackup
 set clipboard+=unnamed           " set clipboard to unnamed to access the system clipboard under windows
 syntax on                       " turn syntax highlighting on by default
 
+set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,shift-jis,latin1,big5,gb18030,gbk,gb2312,cp936
 set fileencoding=utf-8
-set encoding=utf-8
 set termencoding=utf-8
 set guifont=Consolas:h12
+
+"解决中文菜单乱码
+source $VIMRUNTIME/delmenu.vim  
+source $VIMRUNTIME/menu.vim             
 
 map    <C-Tab>    :tabn<CR>
 map <C-w> <ESC>viw
