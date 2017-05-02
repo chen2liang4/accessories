@@ -42,6 +42,9 @@ set si                      " Smart indent
 set guioptions+=b
 set nu
 set nobackup
+set noswapfile
+set nowritebackup
+set noundofile
 set clipboard+=unnamed           " set clipboard to unnamed to access the system clipboard under windows
 syntax on                       " turn syntax highlighting on by default
 
